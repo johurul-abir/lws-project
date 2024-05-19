@@ -1,0 +1,62 @@
+.communiti {
+  background-color: var(--section-bg);
+  padding: 70px 0px;
+  border-top: 1px solid #5a5555;
+  .top_com {
+    text-align: center;
+    img {
+      width: 100px;
+    }
+    h3 {
+      font-weight: 600;
+      color: var(--bn-text-color);
+      span {
+        color: var(--main-color);
+      }
+    }
+    p {
+      color: var(--bn-text-color);
+    }
+  }
+  .communiti-card {
+    padding: 30px;
+    display: flex;
+    column-gap: 30px;
+    .left-card {
+      .logo {
+        img {
+          width: 200px;
+          margin: 10px 0 20px 80px;
+        }
+      }
+      p {
+        color: var(--bn-text-color);
+      }
+    }
+    .right-card {
+      iframe {
+        border: 3px solid #61d0d7;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .communiti-card-group {
+    .card {
+      border: var(--border);
+      background-color: var(--card-bg);
+    }
+    padding-top: 80px;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    h5 {
+      padding-top: 15px;
+      color: var(--bn-text-color);
+    }
+    p {
+      color: var(--bn-text-color);
+    }
+  }
+}
