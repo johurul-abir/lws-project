@@ -4,6 +4,7 @@ import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/image/logo.png";
 
 const Topbar = () => {
   const [mode, setMode] = useState(false);
@@ -41,15 +42,9 @@ const Topbar = () => {
       >
         <Container>
           <Navbar.Brand href="#home" className="logo">
-            {mode ? (
-              <Link to="/">
-                <img src="https://learnwithsumit.com/_next/static/media/lws-logo-dark.8e393acf.svg" />
-              </Link>
-            ) : (
-              <Link to="/">
-                <img src="https://learnwithsumit.com/_next/static/media/lws-logo-light.ae7b3c3a.svg" />
-              </Link>
-            )}
+            <Link to="/">
+              <img src={logo} style={{ width: "40px" }} />
+            </Link>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
